@@ -1,3 +1,5 @@
+
+
 # 蒙特卡洛路径追踪软渲染器开发
 
 ## 构建
@@ -17,6 +19,8 @@
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 cmake --build build --config Release
 ```
+
+（仓库中的 `CMakePresets.json` 提供了 `msvc` 配置预设，可用 `cmake --preset msvc` 代替上面的 configure 命令。）
 
 exe 在 `build/Release/PathTracing.exe`。**必须在 `PathTracing/` 目录下运行**（源码中的模型路径以此为准）：
 
